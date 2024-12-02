@@ -12,10 +12,6 @@
     <!-- 로딩 보여주기 "on" 추가 --><!-- 배경이 없을경우 "no_bg" 추가 -->
     <span class="sl_loaderbar"><span class="loaderbar"><span></span> <span></span> <span></span> <span></span></span></span>
     <header class="sl_header index">
-        <!-- 
-            스크롤을 아래로 움직이면 class="hide" 추가
-            스크롤을 위로 올리면 class="active" 추가
-         -->
         <div class="sl_header_wrap">
             <h1 class="sl_logo"><a href="javascript:void(0);" title="GENESIS"><img src="resources/img/gme-logo-negative-rgb.svg"></a></h1>
         </div>
@@ -23,9 +19,7 @@
     <section class="sl_container">
         <div class="sl_main_header">
             <div class="sl_main_header_wrap">
-                <div class="sl_main_img">
-                    <img src="resources/img/img_myhome.png">
-                </div>
+                <div class="sl_main_img"></div>
                 <div class="sl_main_search">
                     <h2><strong>GENESIS STOCK SEARCH</strong><span>Select your vehicle</span></h2>
                     <div class="sl_main_search_form">
@@ -33,14 +27,14 @@
                             select 모양으로 사용 시 class="select"
                             input이 class="active" 되었을 경우 아래 div에도 class="active" 추가
                         -->
-                        <div class="sl_main_search_item">
+                        <div class="sl_main_search_item select active">
                             <!-- 
                                 focus : 내용이 있을 경우 사용
                                 active : 선택되어 하위를 표시할 때 사용
                              -->
                             <label>Model</label>
-                            <input type="text" class="focus" value="Choose your model" readonly>
-                            <button type="button" class="input_clear"><i class="icon-close"></i></button>
+                            <input type="text" class="active" value="Choose your model" readonly>
+                            <!-- <button type="button" class="input_clear"><i class="icon-close"></i></button> -->
                             <!-- 
                                 input class="active" 일때 사용
                                 활성화 시 class="on" 추가
@@ -73,134 +67,68 @@
                 </div>
             </div>
         </div>
+        <style>
+        </style>
         <div class="sl_ctn_wrap">
-            <h3>Our Models</h3>
-            <div class="sl_main_our_models">
-                <div class="sl_main_model_gp">
-                    <div class="sl_main_model_gp_tt"><strong>Classics</strong></div>
-                    <div class="sl_main_model_list">
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/i10_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">i10</div>
-                        </div>
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/i20_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">i20</div>
-                        </div>
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/i30_FB_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">i30</div>
-                        </div>
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/i30_HB_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">i30</div>
-                        </div>
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/i30_WA_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">i30</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sl_main_model_gp">
-                    <div class="sl_main_model_gp_tt"><strong>SUV</strong></div>
-                    <div class="sl_main_model_list">
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/KONA_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">KONA</div>
-                        </div>
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/SANTA_FE_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">SANTAFE</div>
-                        </div>
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/STARIA_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">STARIA</div>
-                        </div>
-                        <div class="sl_main_model">
-                            <div class="sl_main_model_img"><img src="resources/img/models/TUCSON_clearcut_21_16x9.png"></div>
-                            <div class="sl_main_model_name">TUCSON</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="sl_tab">
+                <div class="sl_tab_item active"><span>ALL</span></div>
+                <div class="sl_tab_item"><span>SUV</span></div>
+                <div class="sl_tab_item"><span>SALOON</span></div>
+                <div class="sl_tab_item"><span>ESTATE</span></div>
+                <div class="sl_tab_item"><span>ELECTRIC</span></div>
             </div>
-        </div>
-        <div class="sl_ctn_wrap sl_disclaimer">
-            <div class="sl_disclaimer_wrap">
-                <div class="disc_header">
-                    <div class="copylight">ⓒ Copylight 2019 Hyundai Motor Company. All right reserved.</div>
-                    <div class="disc_nav">
-                        <a href="#" class="disc_nav_item">Imprint</a>
-                        <a href="#" class="disc_nav_item">Privacy Policy</a>
-                        <a href="#" class="disc_nav_item">Cookie Policy</a>
+            <div class="sl_main_car_list">
+                <div class="sl_main_car_item">
+                    <div class="sl_main_car_img"><img src="resources/img/main_car.png" alt="car"></div>
+                    <div class="sl_main_car_info">
+                        <span>GV60</span>
+                        <strong>1.9% apr representative</strong>
+                        <em>on personal contract purchase</em>
                     </div>
                 </div>
-                <div class="disc_ctn">
-                    <h4>H4 Lorem ipsum dolor sit amet</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus </p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus </p>
-                    <h4>H4 Lorem ipsum dolor sit amet</h4>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus </p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus </p>
+                <div class="sl_main_car_item">
+                    <div class="sl_main_car_img"><img src="resources/img/main_car.png" alt="car"></div>
+                    <div class="sl_main_car_info">
+                        <span>GV60</span>
+                        <strong>1.9% apr representative</strong>
+                        <em>on personal contract purchase</em>
+                    </div>
+                </div>
+                <div class="sl_main_car_item">
+                    <div class="sl_main_car_img"><img src="resources/img/main_car.png" alt="car"></div>
+                    <div class="sl_main_car_info">
+                        <span>GV60</span>
+                        <strong>1.9% apr representative</strong>
+                        <em>on personal contract purchase</em>
+                    </div>
+                </div>
+                <div class="sl_main_car_item">
+                    <div class="sl_main_car_img"><img src="resources/img/main_car.png" alt="car"></div>
+                    <div class="sl_main_car_info">
+                        <span>GV60</span>
+                        <strong>1.9% apr representative</strong>
+                        <em>on personal contract purchase</em>
+                    </div>
+                </div>
+                <div class="sl_main_car_item">
+                    <div class="sl_main_car_img"><img src="resources/img/main_car.png" alt="car"></div>
+                    <div class="sl_main_car_info">
+                        <span>GV60</span>
+                        <strong>1.9% apr representative</strong>
+                        <em>on personal contract purchase</em>
+                    </div>
+                </div>
+                <div class="sl_main_car_item">
+                    <div class="sl_main_car_img"><img src="resources/img/main_car.png" alt="car"></div>
+                    <div class="sl_main_car_info">
+                        <span>GV60</span>
+                        <strong>1.9% apr representative</strong>
+                        <em>on personal contract purchase</em>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="sl_footer">
-        <div class="sl_footer_wrap">
-            <div class="sl_footer_ctn">
-                <div class="sl_footer_copylight">Ⓒ Copyright 2021 Hyundai Motor Company. All rights reserved.</div>
-                <div class="sl_footer_links2">
-                    <ul>
-                        <li>
-                            <a href="/it/imprint.html">
-                                <span>Imprint</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/it/informativa-e-consenso.html">
-                                <span>Privacy policy</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/it/legal-disclaimer.html">
-                                <span>Disclaimer</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/it/contact-us.html">
-                                <span>Contattaci</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/it/cookie-policy.html">
-                                <span>Cookie</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sl_popup bg_white">
-        <a href="#" class="sl_popup_close icon-close"></a>
-        <div class="sl_pop_wrap">
-            <div>Popup Contents</div>
-        </div>
-    </div>
-    <!-- Cookie 
-    <div class="ie_cookie">
-        <div class="ie_cookie_tt">Používáme cookies</div>
-        <div class="ie_cookie_text">
-            <p>nezbytné pro správné fungování webu, analýzu provozu a návštěvnosti a personalizaci obsahu a reklamy. Spravovat nebo blokovat využívání jednotlivých druhů cookies můžete v Nastavení cookies.<br>
-                Informace o užívání našich stránek také sdílíme s našimi reklamními a analytickými partnery.<br><br>
-            </p>
-        </div>
-        <div class="ie_cookie_btns">
-            <div><a class="sl_button primary">Rozumím a přijímám</a></div>
-            <div class="mt15"><a class="sl_button">Nastavení cookies</a></div>
-        </div>
-    </div>
-    -->
 </div>
 </body>
 </html>

@@ -56,13 +56,13 @@ a:hover{color:#111}
 
 
 
-.sl_button {display:inline-block;border:2px solid #000;background-color:#fff;color:#000;line-height:1;padding:2rem 5rem;box-sizing:border-box;font-family:'genesis-text',sans-serif;font-size:1.6rem;position:relative;cursor:pointer;transition:all .3s;text-transform:uppercase;}
+.sl_button {display:inline-block;border:1px solid #000;background-color:#fff;color:#000;line-height:1;padding:2rem 5rem;box-sizing:border-box;font-family:'genesis-text',sans-serif;font-size:1.6rem;position:relative;cursor:pointer;transition:all .3s;text-transform:uppercase;}
 .sl_button.p2rem {padding:2rem;}
-.sl_button.primary {border:2px solid #1b1b1b;background-color:#1b1b1b;color:#fff;}
+.sl_button.primary {border:1px solid #000;background-color:#000;color:#fff;}
 .sl_button.disabled,
 .sl_button.disabled:hover {border-color:#ccc;background-color:#f2f2f2;color:#767676;cursor:default;}
-.sl_button:hover {background-color:#fff;color:#000;}
-.sl_button.primary {position:relative;}
+.sl_button:hover {background-color:#000;color:#fff;}
+.sl_button.primary:hover {background-color:#fff;color:#000;}
 .sl_text_button{display:inline-block;position:relative;padding:0;background-color:transparent;border:none;outline:none;font-style:inherit;cursor:pointer;}
 .sl_text_button span {font-family:'genesis-head',sans-serif;font-size:1.5rem;display:block;text-align:right;padding-right:5rem;position:relative;color:#1b1b1b;margin-bottom:2rem;margin-top:.6rem;}
 .sl_text_button:hover span {color:#000;}
@@ -152,6 +152,17 @@ a:hover{color:#111}
 .sl_ctn_filter .sl_filter_nav_item:hover {color:#f5f5f5;}
 .sl_ctn_filter .sl_filter_nav_item.active {border:1px solid #f5f5f5;color:#f5f5f5;}
 .sl_ctn_filter .sl_filter_nav_item.active:after {content:"";display:block;width: 0;height: 0;border-left: 40px solid transparent;border-right: 40px solid transparent;border-top: 30px solid #1b1b1b;position: absolute;top: 90px;left: 50%;margin-left: -40px;z-index:10;}
+
+.sl_main_car_list {padding:6rem 0;display:flex;flex-wrap:wrap;align-items:flex-start;gap:4rem;}
+.sl_main_car_list .sl_main_car_item {border:1px solid #e5e5e5;border-radius:4px;cursor:pointer;transition:all .3s;padding:3rem;width:calc(25% - 3rem);box-sizing:border-box;min-width:380px;}
+.sl_main_car_list .sl_main_car_item:hover {border-color:#000;}
+.sl_main_car_list .sl_main_car_item .sl_main_car_img {width:318px;height:150px;}
+.sl_main_car_list .sl_main_car_item .sl_main_car_img img {max-width:100%;max-height:150px;}
+.sl_main_car_list .sl_main_car_item .sl_main_car_info {display:flex;flex-direction:column;gap:1rem;}
+.sl_main_car_list .sl_main_car_item .sl_main_car_info span,
+.sl_main_car_list .sl_main_car_item .sl_main_car_info strong {font-family:'genesis-head',sans-serif;font-size:1.6rem;}
+.sl_main_car_list .sl_main_car_item .sl_main_car_info strong {font-size:2.4rem;}
+.sl_main_car_list .sl_main_car_item .sl_main_car_info em {font-style:normal;font-size:1.4rem;color:#797979;}
 
 /* Car Info */
 .sl_car_info:after {content:"";display:block;clear:both;}
@@ -560,22 +571,22 @@ a:hover{color:#111}
 .sl_main_search_item input:focus,
 .sl_main_search_item select:focus,
 .sl_main_search_item input.active,
-.sl_main_search_item select.active {transition:border-color .5s;}
-.sl_main_search_item select.focus option {color:#bbb;}
+.sl_main_search_item select.active {transition:border-color .5s;border-color:#000;}
+.sl_main_search_item select.focus option {color:#000;}
 .sl_main_search_item input::placeholder,
 .sl_main_search_item select::placeholder {color:rgba(255,255,255,.7)}
 
-.sl_main_search_item.select:before {content: "\f102";display:block;position:absolute;top:17px;right:20px;pointer-events:none;font-family: iconfont!important;font-style: normal;font-weight: 400!important;transition:all .3s;}
+.sl_main_search_item.select:before {content: "\f102";display:block;position:absolute;top:43px;right:0;pointer-events:none;font-family: iconfont!important;font-style: normal;font-weight: 400!important;transition:all .3s;}
 .sl_main_search_item.select.active:before {transform:rotate(180deg);}
 .sl_main_search_item.search:before {content: "\f106";display:block;position:absolute;top:17px;right:20px;pointer-events:none;font-family: iconfont!important;font-style: normal;font-weight: 400!important;opacity:0;transition:all .3s;}
 .sl_main_search_item.search.active:before {opacity:1;}
 .sl_main_search_item .input_clear {content:"";position:absolute;top: 42px;right:0;width: 24px;height: 24px;border:0 none;padding:0;border-radius:50%;line-height:20px;cursor:pointer;text-align:center;color:#000;background-color:transparent;}
 .sl_main_search_item .input_clear .icon-close {line-height: 24px;font-size: 1.1rem;}
 
-.sl_main_search_item .sl_select_list {display:none;position:absolute;top:53px;left:0;right:0;background-color:#1b1b1b;border:2px solid #fff;border-top:0;z-index:2;max-height:300px;overflow:auto;}
+.sl_main_search_item .sl_select_list {display:none;position:absolute;top:77px;left:0;right:0;background-color:#fff;border:2px solid #000;border-top:0;z-index:2;max-height:300px;overflow:auto;}
 .sl_main_search_item .sl_select_list.on {display:block;}
-.sl_main_search_item .sl_select_list li {padding:1rem 1rem 1rem 2rem;font-family:'genesis-head',sans-serif;font-size:1.4rem;color:#fff;}
-.sl_main_search_item .sl_select_list li:hover {background-color:#fff;cursor:pointer;color:#1b1b1b;}
+.sl_main_search_item .sl_select_list li {padding:1rem 1rem 1rem 2rem;font-family:'genesis-head',sans-serif;font-size:1.6rem;color:#000;}
+.sl_main_search_item .sl_select_list li:hover {background-color:#000;cursor:pointer;color:#fff;}
 
 .sl_main_search_item .sl_button {background-color:#000;border-color:#000;color:#fff;width:100%;text-align:center;}
 .sl_main_search_item .sl_button:hover {background-color:#fff;color:#000;}
@@ -987,15 +998,16 @@ a:hover{color:#111}
 
 .sl_dialog {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.3);z-index:90;display:none;}
 .sl_dialog.on {display:block;}
-.sl_dialog .sl_dialog_wrap {position:fixed;top:50%;left:50%;max-width:1000px;max-height:90vh;transform:translate(-50%,-50%);background-color:#fff;padding:3rem 4rem;overflow:auto;}
+.sl_dialog .sl_dialog_wrap {position:fixed;top:50%;left:50%;max-width:1440px;max-height:90vh;transform:translate(-50%,-50%);background-color:#fff;padding:3rem 4rem;overflow:auto;}
 .sl_dialog .sl_dialog_close {text-align:right;}
-.sl_tab {display:flex;border-bottom:1px solid #edf0f4;}
-.sl_tab .sl_tab_item {padding:1rem 3rem;margin-bottom:-2px;font-size:1.5rem;color:#333;font-family:HyundaiHeadBold,sans-serif;cursor:pointer;}
+
+.sl_tab {display:flex;align-items:center;}
+.sl_tab .sl_tab_item {flex:1;display:inline-flex;align-items:center;cursor:pointer;justify-content:center;padding:1.4rem 0;margin-bottom:-2px;font-size:1.6rem;color:#999999;font-family:'genesis-head',sans-serif;cursor:pointer;border-bottom:1px solid #E5E5E5;}
 .sl_tab .sl_tab_item:hover {color:#000;}
-.sl_tab .sl_tab_item.active {border-bottom:3px solid #121212;}
+.sl_tab .sl_tab_item.active {border-color:#000;color:#000;}
 .sl_tab .sl_tab_item.active:hover {color:#000;}
 .sl_finance_head {padding:2rem 0;}
-.sl_finance_head .sl_finance_head_tt {font-size:2rem;font-family:HyundaiHeadBold,sans-serif;padding:1rem 0;}
+.sl_finance_head .sl_finance_head_tt {font-size:2rem;font-family:'genesis-head',sans-serif;padding:1rem 0;}
 .sl_finance_head .sl_finance_head_txt {font-size:1.6rem;font-family:'genesis-text',sans-serif;}
 .sl_finance_head + .finance_price_head {display:none;}
 .sl_dialog .sl_dialog_wrap.finance_simulator {padding:3rem; width: 90%;}
@@ -1007,41 +1019,22 @@ a:hover{color:#111}
 .sl_finance_ctn .sl_range_item {padding-top:2.8rem;}
 .sl_finance_ctn .sl_range_item:first-child {padding-top:0;}
 .sl_finance_ctn .sl_range_item:after {content:"";display:block;clear:both;}
-.sl_finance_ctn .sl_range_item .sl_range_tt {float:left;width:calc(100% - 170px);font-size:1.6rem;padding-bottom:1.3rem;font-family:HyundaiTextBold,sans-serif;}
+.sl_finance_ctn .sl_range_item .sl_range_tt {float:left;width:calc(100% - 170px);font-size:1.6rem;padding-bottom:1.3rem;font-family:'genesis-head',sans-serif;}
 .sl_finance_ctn .sl_range_item .sl_range {float:left; width:calc(100% - 180px); padding:0 15px 20px 15px;  margin-bottom: 15px;}
 .sl_finance_ctn .sl_range_item .sl_range_input {float:right;width:170px;position:relative;padding:0 0 0 3rem;}
 .sl_finance_ctn .sl_range_item .sl_range_input label {position:absolute;top:-.5rem;left:3.7rem;background-color:#fff;font-size:1rem;color:#aaa;padding:0 .5rem;}
 .sl_finance_ctn .sl_range_item .sl_range_input input,
-.sl_finance_ctn .sl_range_item .sl_range_input select {height:58px;border:2px solid #e5e5e5;width:100%;font-size:1.6rem;padding:0 1rem;font-family:HyundaiTextBold,sans-serif;}
-.sl_finance_ctn .sl_finance_price {flex:0 0 250px;}
-.finance_price_head {background-color:#121212;color:#fff;text-align:right;padding:1.5rem 1rem;}
-.finance_price_head span {display:block;font-size:1.5rem;font-family:HyundaiTextReg,sans-serif;opacity:.9;}
-.finance_price_head strong {display:block;font-size:3.4rem;line-height:3.6rem;font-family:HyundaiTextBold,sans-serif;}
-.sl_finance_ctn .sl_finance_price .finance_price_detail {background-color:#e5e5e5;padding:1rem;}
-.sl_finance_ctn .sl_finance_price .price_detail_item {display:flex;justify-content:space-between;font-size:1.3rem;font-family:HyundaiTextReg,sans-serif;line-height:2rem;}
+.sl_finance_ctn .sl_range_item .sl_range_input select {height:58px;border:2px solid #e5e5e5;width:100%;font-size:1.6rem;padding:0 1rem;font-family:'genesis-head',sans-serif;}
+.sl_finance_ctn .sl_finance_price {flex:0 0 250px;border:2px solid #000;border-radius:4px;padding:2rem;}
+.finance_price_head {background-color:#fff;color:#000;text-align:right;}
+.finance_price_head span {display:block;font-size:1.5rem;font-family:'genesis-text',sans-serif;opacity:.9;}
+.finance_price_head strong {display:block;font-size:3.4rem;line-height:3.6rem;font-family:'genesis-head',sans-serif;}
+.sl_finance_ctn .sl_finance_price .finance_price_detail {padding:1rem;}
+.sl_finance_ctn .sl_finance_price .price_detail_item {display:flex;justify-content:space-between;font-size:1.3rem;font-family:'genesis-text',sans-serif;line-height:2rem;}
 .sl_finance_terms {padding: 2.2rem 0;}
-.sl_finance_terms .finance_terms_tt {font-size:1.6rem;padding-bottom:1rem;font-family:HyundaiHeadBold,sans-serif;}
-.sl_finance_terms .finance_terms_txt {font-size:1.2rem;padding-bottom:2rem;font-family:HyundaiTextReg,sans-serif;color:#767676;}
+.sl_finance_terms .finance_terms_tt {font-size:1.6rem;padding-bottom:1rem;font-family:'genesis-head',sans-serif;}
+.sl_finance_terms .finance_terms_txt {font-size:1.2rem;padding-bottom:2rem;font-family:'genesis-text',sans-serif;color:#767676;}
 .sl_finance_ctn .sl_finance_price {min-width:300px;}
-
-.sl_dialog.dark {background-color:rgba(0,0,0,0.9);}
-.sl_dialog.dark .sl_dialog_wrap {background-color:#111;border:1px solid #222;}
-.sl_dialog.dark .icon-close {color:#e5e5e5;}
-.sl_dialog.dark .sl_tab {border-bottom:1px solid #e5e5e5;}
-.sl_dialog.dark .sl_tab .sl_tab_item {color:#e5e5e5;}
-.sl_dialog.dark .sl_tab .sl_tab_item.active {color:#ad7b62;border-bottom:1px solid #ad7b62;margin-bottom:-1px;}
-.sl_dialog.dark .sl_finance_ctn .sl_range_item .sl_range_input label {background-color:#111;color:#ad7b62;font-size:1.2rem;}
-.sl_dialog.dark .sl_finance_head {color:#e5e5e5;}
-.sl_dialog.dark .sl_finance_head .sl_finance_head_txt {color:#999;}
-.sl_dialog.dark .sl_finance_ctn .sl_range_item .sl_range_input input,
-.sl_dialog.dark .sl_finance_ctn .sl_range_item .sl_range_input select {background-color:#111;color:#fff;border:2px solid #111;border-bottom:1px solid #e5e5e5;}
-.sl_dialog.dark .sl_finance_ctn .sl_range_item {color:#e5e5e5;}
-.sl_dialog.dark .sl_finance_ctn .sl_finance_price {border:1px solid #333;}
-.sl_dialog.dark .finance_price_head strong {color:#ad7b62;}
-.sl_dialog.dark .sl_finance_terms .finance_terms_tt {color:#e5e5e5;}
-.sl_dialog.dark .sl_finance_ctn .sl_finance_price .finance_price_detail {background-color:#1b1b1b;color:#999;}
-.sl_dialog.dark .sl_dialog_foot .sl_button {border:2px solid #fff;background-color:#111;color:#fff;}
-.sl_dialog.dark .sl_dialog_foot .sl_button.primary {background-color:#fff;color:#111;}
 
 
 /* Slider */
@@ -1067,7 +1060,6 @@ a:hover{color:#111}
 /* Start of Change New home image */
 .sl_header.index .sl_header_wrap .sl_logo a {color:#1b1b1b;}
 .sl_header.index .sl_header_wrap.active .sl_logo a {color:#ffffff;}
-.sl_main_img img {/* display:none; */}
 .sl_main_header::before{content:'';position:absolute; width:100%; height:7rem; top:0; background-color:#ffffff;z-index: 10;}
 .sl_main_search {z-index: 10;}
 .sl_main_header {min-height:83rem;}
@@ -1238,9 +1230,12 @@ a:hover{color:#111}
     .sl_form_model_list .sl_form_model {width:100%;}
     .sl_form_model_list .sl_form_model label {border:0 none;}
     .sl_main_header {min-height:auto;}
-    .sl_main_header_wrap {padding:8rem 2rem 3rem 2rem;}
+    .sl_main_header_wrap {padding:2rem 2rem 3rem 2rem;}
     .sl_main_search {width:100%;margin-top:2rem;padding:2rem;position:relative;top:auto;margin-bottom:-20rem;}
     .sl_main_search h2 {text-align:center;font-size:2.4rem;}
+    .sl_main_car_list {padding:4rem 2rem;}
+    .sl_main_car_list .sl_main_car_item {width:100%;min-width:100%;}
+    .sl_main_car_list .sl_main_car_item .sl_main_car_img {width:100%;text-align:center;}
     .sl_main_img strong {left:2rem;font-size:4rem;bottom:1rem;}
     .sl_myorder .myorder_step {zoom:0.6;}
     .sl_pop_myNotification h3 {padding:0 4rem 0 0;margin-top:2rem;}
