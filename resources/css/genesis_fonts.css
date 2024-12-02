@@ -1,0 +1,99 @@
+@font-face {
+    font-family: genesis-head-light;
+    src: url(../fonts/genesis/GenesisSansHead-Light.BQL1TraM2bOytojN1T_xMy.eot);
+    src: url(../fonts/genesis/GenesisSansHead-Light.BQL1TraM2bOytojN1T_xMy.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansHead-Light.DHk55HTYBGU7fleuFjMSLB.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansHead-Light.CGIT9Ta8C5LpFXB0qC9ViK.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-head;
+    src: url(../fonts/genesis/GenesisSansHeadKRRegular.CSG080Ox8JAmADcjVFI9DR.eot);
+    src: url(../fonts/genesis/GenesisSansHeadKRRegular.CSG080Ox8JAmADcjVFI9DR.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansHeadKRRegular.DyD35UzWkINyJ09F0TlmeQ.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansHeadKRRegular.CUM5zL9n0Kh_hPjimBH9RZ.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-text;
+    src: url(../fonts/genesis/GenesisSansTextKRRegular.nu9NXyiRmjIv4wQOCfKO-.eot);
+    src: url(../fonts/genesis/GenesisSansTextKRRegular.nu9NXyiRmjIv4wQOCfKO-.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansTextKRRegular.B3nr7-InY8jHC-37v5bx5v.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansTextKRRegular.Wml_-JsxiAYNS8SDwK3o_.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-text-medium;
+    src: url(../fonts/genesis/GenesisSansTextKRMedium.KwsqWrdWRNLP9CcNjSe6l.eot);
+    src: url(../fonts/genesis/GenesisSansTextKRMedium.KwsqWrdWRNLP9CcNjSe6l.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansTextKRMedium.Cd8VEt-CFhj5yV_JOv8gKK.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansTextKRMedium.BPmJc3uPS7g02m-VetZEQh.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-text-bold;
+    src: url(../fonts/genesis/GenesisSansTextKRBold.MLFvop_nLVZO1A1CTQJon.eot);
+    src: url(../fonts/genesis/GenesisSansTextKRBold.MLFvop_nLVZO1A1CTQJon.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansTextKRBold.CMLs2n44ZtmsrrP05SLmWA.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansTextKRBold.D5yN87bppczhETPj6B51mN.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-head-office-light;
+    src: url(../fonts/genesis/GenesisSansHeadOffice-Light.BoUl9a9DgpQPRcg35Uug9x.eot);
+    src: url(../fonts/genesis/GenesisSansHeadOffice-Light.BoUl9a9DgpQPRcg35Uug9x.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansHeadOffice-Light.BRj_eYy9e0V2LLCg0GCiux.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansHeadOffice-Light.VC_s02Wi87uMPGsIdXulh.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-head-office;
+    src: url(../fonts/genesis/GenesisSansHeadOffice-Regular.C1on_XfLP833Rm0GP_fj6O.eot);
+    src: url(../fonts/genesis/GenesisSansHeadOffice-Regular.C1on_XfLP833Rm0GP_fj6O.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansHeadOffice-Regular.DWQpwBw7UQvV-81h2_e7Vl.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansHeadOffice-Regular.BJc-o1Pg-wL7A_0-ALSjRp.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-text-office;
+    src: url(../fonts/genesis/GenesisSansTextOffice-Regular.rzwl6kMFt11C5fL_DzLTj.eot);
+    src: url(../fonts/genesis/GenesisSansTextOffice-Regular.rzwl6kMFt11C5fL_DzLTj.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansTextOffice-Regular.Cu4V-j60cfg5NQZkL5ZVgH.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansTextOffice-Regular.gH5An0E2nUP7Ie7BX-DWf.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-text-office-medium;
+    src: url(../fonts/genesis/GenesisSansTextOffice-Medium.ClD2B-agqYhYYzhcxYbNQm.eot);
+    src: url(../fonts/genesis/GenesisSansTextOffice-Medium.ClD2B-agqYhYYzhcxYbNQm.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansTextOffice-Medium.B1kD-40FHLn9gkfHMXDa9x.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansTextOffice-Medium.D7BwFqyMXR7viWQ3qk1KB4.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: genesis-text-office-bold;
+    src: url(../fonts/genesis/GenesisSansTextOffice-Bold.CrdCTzhoN3q_4-bkfQWaIM.eot);
+    src: url(../fonts/genesis/GenesisSansTextOffice-Bold.CrdCTzhoN3q_4-bkfQWaIM.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/genesis/GenesisSansTextOffice-Bold.CBfjQXX8ItNsM_OIFbYusI.woff2) format("woff2"),
+    url(../fonts/genesis/GenesisSansTextOffice-Bold.JOOanX7kwRbOBPNzdyoT0.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
