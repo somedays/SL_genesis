@@ -455,7 +455,7 @@ a:hover{color:#111}
 .icon-tooltip .sl_tooltip .sl_tooltip_msg {font-size:1.1rem;line-height:1.7rem;width:300px;text-align:left;cursor:text;max-height:170px;overflow:auto;}
 
 .sl_car_estimate_addinfo {margin-top:1rem;padding:1.5rem 2.5rem;background-color:#fff;}
-.sl_car_estimate_addinfo strong {display:block;font-family:HyundaiTextMedium,sans-serif;color:#1c1b1b;font-size:1.6rem;}
+.sl_car_estimate_addinfo strong {display:block;font-family:'genesis-text',sans-serif;color:#1c1b1b;font-size:1.6rem;}
 .sl_car_estimate_addinfo span {display:block;font-size:1.4rem;font-family:'genesis-text',sans-serif;padding-top:.5rem;}
 .addinfo_header {position:relative;}
 .addinfo_header:before {content:"\f102";display:block;position:absolute;top:11px;right:0;pointer-events:none;font-family:iconfont!important;font-style:normal;font-weight:400!important;transition:all .3s;}
@@ -895,7 +895,7 @@ a:hover{color:#111}
 .sl_footer_links {flex:1;text-align:left;}
 .accordion_items {display:flex;}
 .accordion_items .accordion_item {flex:1;padding-right:2rem;}
-.accordion_header {padding:1.5rem .5rem 1.5rem 0;border-bottom:2px solid hsla(0,0%,100%,.1);font-size:15px;line-height:1.3;font-family:HyundaiTextMedium,sans-serif;}
+.accordion_header {padding:1.5rem .5rem 1.5rem 0;border-bottom:2px solid hsla(0,0%,100%,.1);font-size:15px;line-height:1.3;font-family:'genesis-text',sans-serif;}
 .accordion_items .accordion_header {position:relative;}
 .accordion_header>div:before,
 .accordion_items .accordion_header>div:after {
@@ -931,19 +931,37 @@ a:hover{color:#111}
     right:10px;
     right:1rem;
 }
+.sl-footer {background-color:#000;}
+.sl-footer-links {max-width:1640px;display:flex;justify-content:space-between;align-items:center;margin:0 auto;padding:0 40px;}
+.sl-footer-ul {display:flex;padding:32px 0;gap:16px;}
+.sl-footer-ul .sl-footer-links__item-link {color:#999;cursor:pointer;font-family:'genesis-text',sans-serif;font-size:14px;}
+.sl-footer-ul .sl-footer-links__item-link:hover {color:#fff;}
+.sl-footer .sl-lang-buttons {display:flex;align-items:center;}
+.sl-footer .sl-lang-buttons .lang-buttons_item {font-size:14px;font-family:'genesis-text',sans-serif;line-height:24px;min-width:80px;padding:8px 24px;background-color:#4d4d4d;color:#fff;}
+.sl-footer .sl-lang-buttons .lang-buttons_item.active {background-color:#fff;color:#000;}
+.sl-footer-separator {background-color:#1a1a1a;height: 1px;margin: auto;width: 100%;}
+.sl-footer-socials {max-width:1640px;display:flex;justify-content:space-between;align-items:center;margin:0 auto;padding:0 40px;height:96px;}
+.sl-footer-socials .right {display:flex;flex-direction:column;justify-content:center;align-items:flex-end;column-gap:26px;}
+.sl-footer-socials .right span {font-family:'genesis-text',sans-serif;font-size:14px;line-height:24px;color:#fff;margin-bottom:4px;}
+.sl-footer-socials .right .icons-list {display:flex;column-gap:16px;align-items:center;flex-direction:row;}
+.sl-footer-socials .right .icons-list a {padding:4px;}
+.sl-footer-bottom {display:flex;align-items:center;justify-content:center;flex-direction:column;padding:0 40px;margin:48px auto 0 auto;}
+.sl-footer-bottom .footer-logo img {width:128px;}
+.sl-footer-bottom p {font-size:14px;line-height:24px;text-align:center;font-family:'genesis-text',sans-serif;color:#999;padding:0 60px;margin-bottom:48px;}
+
 
 .accordion_content ul {padding:2rem 1rem 3rem 0;}
-.accordion_content li a {font-size:15px;line-height:1.3;color:#fff;text-decoration:none;font-family:HyundaiTextMedium,sans-serif;}
+.accordion_content li a {font-size:15px;line-height:1.3;color:#fff;text-decoration:none;font-family:'genesis-text',sans-serif;}
 .accordion_content li a:hover {text-decoration:underline;}
 .social_list {margin:4rem 0;display:flex;}
 .social_list li {flex:0 0 6rem;text-align:right;}
 .social_list li a {font-size:40px;color:#fff;display:inline-block;}
 .social_list li a span {display:none;}
-.sl_footer_copylight {margin:1rem 0 0 0;font-family:HyundaiTextMedium,sans-serif;font-size:1.4rem;}
+.sl_footer_copylight {margin:1rem 0 0 0;font-family:'genesis-text',sans-serif;font-size:1.4rem;}
 .sl_footer_ctn p {margin:4rem 0 11rem 0;text-align:left;font-size:1.4rem;font-family:HyundaiTextReg,sans-serif;}
 .sl_footer_ctn p i {font-style:italic;}
 .sl_footer_links2 ul {display:flex;padding-top:1rem;}
-.sl_footer_links2 li a {font-size:1.5rem;color:#fff;display:inline-block;margin-left:3rem;font-family:HyundaiTextMedium,sans-serif;white-space:nowrap;}
+.sl_footer_links2 li a {font-size:1.5rem;color:#fff;display:inline-block;margin-left:3rem;font-family:'genesis-text',sans-serif;white-space:nowrap;}
 
 .view_pc_b {display:block !important;}
 .view_m_b {display:none !important;}
@@ -995,7 +1013,7 @@ a:hover{color:#111}
 .sl_byv_gly_tab .sl_gly_tab_item:last-child {border-radius:0 20px 20px 0;border-left:0 none;padding-left:2px;}
 .sl_byv_gly_tab .sl_gly_tab_item input[type="radio"] {display:none;}
 .sl_byv_gly_tab .sl_gly_tab_item input[type="radio"]:checked + label {background-color:#1b1b1b;color:#fff;}
-.sl_byv_gly_tab .sl_gly_tab_item label {display:inline-block;font-size:14px;font-weight:500;padding:3px 10px;color:#1b1b1b;cursor:pointer;border-radius:15px;font-family:HyundaiTextMedium,sans-serif;}
+.sl_byv_gly_tab .sl_gly_tab_item label {display:inline-block;font-size:14px;font-weight:500;padding:3px 10px;color:#1b1b1b;cursor:pointer;border-radius:15px;font-family:'genesis-text',sans-serif;}
 .sl_byv_gly_tab .sl_gly_tab_item label:hover {background-color:#eaeaea;}
 
 /* 20230501 */
@@ -1125,7 +1143,7 @@ a:hover{color:#111}
 .rc-slider-handle {width:22px; height:22px;}					
 .rc-slider-dot {bottom:-10px; width:15px; height:15px; margin-top:-5px;}
 .rc-slider-track {background-color:#1b1b1b;}
-.rc-slider-mark-text {padding-top:2px; font-size:16px; font-family:'HyundaiTextReg';} /*HyundaiTextMedium*/
+.rc-slider-mark-text {padding-top:2px; font-size:16px; font-family:'HyundaiTextReg';} /*'genesis-text'*/
 /* End of Slider */
 
 .sl_dialog_foot {text-align:center;}
@@ -1159,6 +1177,13 @@ a:hover{color:#111}
     .sl_main_img {max-width:100%;}
     .sl_footer .sl_footer_wrap,
     .sl_footer .sl_footer_wrap img {max-width:100%;}
+    .sl-footer-links {flex-direction:column;align-items:flex-start;}
+    .sl-footer-ul {flex-direction:column;align-items:flex-start;row-gap:16px;}
+    .sl-lang-buttons {min-height:40px;padding:20px 0 40px 0;}
+    .sl-footer-socials {flex-direction:column;align-items:flex-start;}
+    .sl-footer-bottom .footer-logo {width:84px;}
+    .sl-footer-bottom p {font-size:12px;margin-top:10px;}
+    .sl-footer-socials .right {align-items:flex-start;}
     .sl_overview_img_text_box {margin-left:3rem;}
     .sl_main_img_wrap {min-height:auto;}
     .sl_main_img strong {left:2rem;font-size:6rem;}
