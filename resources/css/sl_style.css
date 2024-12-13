@@ -34,14 +34,16 @@ a:hover{color:#111}
 
 /* total width */
 .scrollbar::-webkit-scrollbar {background-color:transparent;width:10px;}
-/* background of the scrollbar except button or resizer */
 .scrollbar::-webkit-scrollbar-track {background-color:transparent}
 .scrollbar::-webkit-scrollbar-track:hover {background-color:transparent}
-/* scrollbar itself */
 .scrollbar::-webkit-scrollbar-thumb {background-color:#fff;border-radius:16px;border:2px solid transparent;}
 .scrollbar::-webkit-scrollbar-thumb:hover {background-color:#fff;border:2px solid transparent;}
-/* set button(top and bottom of the scrollbar) */
 .scrollbar::-webkit-scrollbar-button {display:none}
+/* background of the scrollbar except button or resizer */
+.sl_select_list::-webkit-scrollbar {background-color:#999;width:6px;height:6px;}
+.sl_select_list::-webkit-scrollbar-track {background-color:#fff;}
+.sl_select_list::-webkit-scrollbar-thumb {background-color:#999;border-radius:16px;}
+/* set button(top and bottom of the scrollbar) */
 
 /* total width */
 .scrollbar_dark::-webkit-scrollbar {background-color:transparent;width:10px;}
@@ -88,7 +90,7 @@ a:hover{color:#111}
 .sl_header.index.hide {top:-8rem;}
 .sl_header.index.active {background-color:#1b1b1b;}
 .sl_header.index.active .sl_logo a {color:#fff;}
-.sl_header_wrap {width:100%;margin:0 auto;align-items:center;justify-content:center;background-color:#000;display:flex;border-left:1px solid rgba(0,0,0,.1);border-right:1px solid rgba(0,0,0,.1);}
+.sl_header_wrap {width:100%;max-width:1640px;margin:0 auto;align-items:center;justify-content:flex-start;background-color:#000;display:flex;border-left:1px solid rgba(0,0,0,.1);border-right:1px solid rgba(0,0,0,.1);padding:0 3rem;}
 .sl_header.index .sl_header_wrap {border-left:0 none;border-right:0 none;}
 .sl_header.index .sl_header_wrap .sl_logo a {color:#fff;}
 .sl_header_wrap.full {max-width:100%;border-left:0 none;border-right:0 none;}
@@ -97,7 +99,7 @@ a:hover{color:#111}
 .sl_header .header_btn.icon-arrow {border-right:1px solid rgba(0,0,0,.1);}
 .sl_header .header_btn.icon-arrow:before {display:inline-block;transform:rotate(180deg);}
 
-.sl_header .sl_logo {color:#1b1b1b;display:inline-flex;padding:0 2.5rem;align-items:center;justify-content:center;flex:0 0 20rem;transition:color .3s;}
+.sl_header .sl_logo {color:#1b1b1b;display:inline-flex;padding:0;align-items:center;justify-content:center;transition:color .3s;}
 .sl_header .sl_logo a {display:inline-block;width:13rem;}
 .sl_header .sl_logo a img {width:100%;height:auto;}
 .sl_header .sl_logo span {display:inline-block;vertical-align:middle;padding-left:10px;font-family:HyundaiHeadBold, sans-serif;}
@@ -172,11 +174,15 @@ a:hover{color:#111}
 .sl_car_info:after {content:"";display:block;clear:both;}
 .sl_car_info .sl_byv_head {float:left;width:calc(100% - 41rem);}
 .sl_car_info_gp {float:left;padding:0 0 50px 0;width:calc(100% - 41rem);}
+.sl_car_info_gp:nth-of-type(1) {border-top:1px solid #000;}
+.sl_car_info_gp.sl_car_info_detail_item {padding:0;margin-bottom:50px;}
 .sl_car_info_gp.w100 {width:100%;}
 .sl_car_info_gp.w50 {width:50%;}
 .sl_car_info_tt {display:flex;justify-content:space-between;align-items:center;padding-bottom:0 !important;}
 .sl_car_info_tt strong,
 .sl_car_info_gp h3 strong {font-size:1.8rem;line-height:4rem;font-family:'genesis-head';}
+.sl_car_info_tt .sl_text_button.ctrl_all:after {display:none;}
+.sl_car_info_tt .sl_text_button.ctrl_all span:first-child {padding-right:45px;line-height:3rem;}
 .sl_car_info.sl_byv .sl_car_info_tt strong,
 .sl_car_info.sl_byv .sl_car_info_gp h3 strong {font-size:2.2rem;}
 .sl_car_info_gp h3 strong small {display:block;font-size:1.5rem;font-family:'genesis-text', sans-serif;line-height:1;}
@@ -242,15 +248,15 @@ a:hover{color:#111}
 .sl_car_info_byv_item .price_item .btn_transh {border:0 none;background-color:transparent;cursor:pointer;padding:0;margin:0 0 0 1remr;}
 .sl_car_info_byv_item .price_item .btn_transh img {width:21px;height:21px;}
 
-.sl_car_info_detail_item {position:relative;border-bottom:2px solid #e8e6e4;}
+.sl_car_info_detail_item {position:relative;border-bottom:2px solid #e8e6e4;float:left;}
 .sl_car_info_detail_item:first-child {border-top:2px solid #e8e6e4;}
-.sl_car_info_detail_item .detail_item_tt {position:relative;font-size:2rem;line-height:1.3;padding:3rem 7rem 3rem 3rem;font-family:'genesis-head';cursor:pointer;transition:background-color .3s;color:#1b1b1b;}
+.sl_car_info_detail_item .detail_item_tt {display:flex;justify-content:space-between;position:relative;font-size:2rem;line-height:1.3;padding:2rem 5rem 2rem 0;font-family:'genesis-head';cursor:pointer;transition:background-color .3s;color:#1b1b1b;}
 .sl_car_info_detail_item .detail_item_tt:hover,
 .sl_car_info_detail_item .detail_item_tt.on {background-color:#fff;}
 .sl_car_info_detail_item .detail_item_ctn {height:0;overflow:hidden;transition:height .3s;background-color:#fff;box-sizing:border-box;}
 .sl_car_info_detail_item .detail_item_tt.on + .detail_item_ctn {height:auto;overflow:auto;}
 
-.sl_car_info_detail_item .detail_item_ctn_table {padding:1rem 8% 6rem;box-sizing:border-box;}
+.sl_car_info_detail_item .detail_item_ctn_table {padding:1rem 5rem 6rem;box-sizing:border-box;}
 .sl_car_info_detail_item .detail_item_ctn_table table {border-collapse:collapse;border-spacing:0;}
 .sl_car_info_detail_item .detail_item_ctn_table table .table_row {border-top:.1rem solid #d8d8d8;}
 .sl_car_info_detail_item .detail_item_ctn_table table .table_row:first-child {border:unset;}
@@ -260,6 +266,11 @@ a:hover{color:#111}
 .sl_car_info_detail_item .detail_item_ctn_table table .table_title {vertical-align:top;min-width:320px;min-width:20rem;max-width:480px;max-width:30rem;font-family:'genesis-head',sans-serif;font-size:25.6px;font-size:1.6rem;line-height:43.2px;line-height:2.7rem;text-align:left;}
 .sl_car_info_detail_item .detail_item_ctn_table table .table_content {padding-left:8%;width:100%;font-family:HyundaiTextReg,sans-serif;font-size:25.6px;font-size:1.6rem;line-height:43.2px;line-height:2.7rem;}
 .sl_car_info_detail_item .detail_item_ctn_table table .table_content span {display:block;}
+
+.detail_item_ctn .table_type {display:flex;width:100%;flex-direction:column;}
+.detail_item_ctn .sl_car_info_byv_item {flex:1;display:flex;justify-content:space-between;font-size:16px;color:#000;}
+.detail_item_ctn .sl_car_info_byv_item .info_item {flex:0 0 auto;}
+.detail_item_ctn .table_type_item span {color:#999;}
 
 .sl_car_keyfacts {display:flex;flex-wrap:wrap;}
 .sl_car_keyitem {display:inline-flex;flex:0 0 25%;flex-direction:column;}
@@ -307,6 +318,7 @@ a:hover{color:#111}
 .sl_byv_aside .btn_full_img img {width:20px;height:56px;vertical-align:middle;}
 .sl_byv_aside .btn_full_img:hover {border-color:#1b1b1b;}
 
+.sl_ctn_tt {padding:0 3rem;}
 .sl_ctn_tt h2 {font-family:'genesis-head-light',sans-serif;font-size:4.8rem;}
 .sl_stock_search_wrap {display:flex;max-width:1640px;margin:0 auto;}
 .sl_stock_filter {display:flex;flex:0 0 40rem;flex-direction:column;padding:4rem 3rem;box-sizing:border-box;}
@@ -336,16 +348,18 @@ a:hover{color:#111}
 .sl_stock_filter_select:after {content:"\f102";display:block;font-size: 1.4rem;font-family:'iconfont';font-weight:500;padding-left:.7rem;position:absolute;top: 18px;right: 15px;}
 .sl_stock_filter_select_item {display:none;transition:all 0s;cursor:pointer;}
 .sl_stock_filter_select_item.selected {display:flex;}
-.sl_stock_filter_select:hover {border:2px solid #000;border-radius:4px;}
-.sl_stock_filter_select:hover:after {display:none;}
-.sl_stock_filter_select:hover .sl_stock_filter_select_item {border:0 none;border-radius:0;display:flex;border-top:1px solid #e5e5e5;margin-top:0;padding-top:1.2rem 1.6rem;}
-.sl_stock_filter_select:hover .sl_stock_filter_select_item:first-child {border-radius:4px 4px 0 0;}
-.sl_stock_filter_select:hover .sl_stock_filter_select_item:last-child {border-radius:0 0 4px 4px;}
-.sl_stock_filter_select:hover .sl_stock_filter_select_item:hover {background-color:#000;color:#fff;border-radius:0;}
-.sl_stock_filter_select:hover .sl_stock_filter_select_item.selected,
-.sl_stock_filter_select:hover .sl_stock_filter_select_item.selected:hover {background-color:#F8F8F8;color:#000;}
+.sl_stock_filter_select .sl_stock_filter_select_list {position:absolute;top:50px;left:0;width:100%;background-color:#fff;}
+.sl_stock_filter_select .sl_stock_filter_select_list .sl_stock_filter_select_item {display:none;}
+.sl_stock_filter_select:hover .sl_stock_filter_select_list {border:2px solid #000;border-radius:4px;z-index:10;max-height:200px;overflow:auto;}
+.sl_stock_filter_select:hover .sl_stock_filter_select_list .sl_stock_filter_select_item {border:0 none;border-radius:0;display:flex;border-top:1px solid #e5e5e5;margin-top:0;padding-top:1.2rem 1.6rem;}
+.sl_stock_filter_select:hover .sl_stock_filter_select_list .sl_stock_filter_select_item {display:block;}
+.sl_stock_filter_select:hover .sl_stock_filter_select_list .sl_stock_filter_select_item:hover {background-color:#000;color:#fff;}
+.sl_stock_filter_select:hover .sl_stock_filter_select_list .sl_stock_filter_select_item.selected,
+.sl_stock_filter_select:hover .sl_stock_filter_select_list .sl_stock_filter_select_item.selected:hover {background-color:#F8F8F8;color:#000;}
 
 .sl_stock_search_list {display:flex;flex:1;padding:4rem;flex-direction:column;}
+.sl_stock_search_list_sort {margin-bottom:1.5rem;display:flex;justify-content:flex-end;}
+.sl_stock_search_list_sort .sl_select {width:200px;}
 .sl_stock_car_list {display:flex;align-items:flex-start;gap:3rem;flex-wrap:wrap;}
 .sl_stock_car_item {display:flex;flex-direction:column;border:1px solid #E5E5E5;border-radius:4px;padding:3rem;max-width:365px;}
 .sl_stock_item_head {display:flex;flex-direction:column;}
@@ -566,7 +580,7 @@ a:hover{color:#111}
 .sl_filter_form .sl_select_item.search.active:before {opacity:1;}
 .sl_filter_form.location .sl_select_item.select:before {top:65px;right:40px;}
 
-.sl_filter_form .sl_select_item .sl_select_list {position:absolute;top:103px;left:2rem;right:2rem;background-color:#f5f5f5;border:2px solid #ddd;border-top:0;z-index:20;max-height:300px;overflow:auto;}
+.sl_filter_form .sl_select_item .sl_select_list {position:absolute;top:103px;left:2rem;right:2rem;background-color:#f5f5f5;border:2px solid #ddd;border-top:0;z-index:20;max-height:264px;overflow:auto;}
 .sl_filter_form .sl_select_item .sl_select_list li {padding:1.5rem 1rem 1.5rem 2rem;font-family:'genesis-head',sans-serif;font-size:1.4rem;color:#121212;text-align:left;}
 .sl_filter_form .sl_select_item .sl_select_list li:hover {background-color:#e5e5e5;cursor:pointer;color:#1b1b1b;}
 
@@ -721,6 +735,19 @@ a:hover{color:#111}
 .sl_form_item .sl_form_radio span:before {content:"";display:inline-block;width:2rem;height:2rem;border:1px solid #A2A2A2;border-radius:50%;vertical-align:middle;margin-right:1rem;margin-top:-1px;}
 .sl_form_item .sl_form_radio input[type="radio"]:checked + span {color:#000000;}
 .sl_form_item .sl_form_radio input[type="radio"]:checked + span:before {background-color:#fff;box-shadow:inset 0 0 0 5px #000;border-color:#000;transition:background-color .3s,box-shadow .3s;}
+.sl_form_item .sl_form_tel {display:flex;}
+.sl_form_item .sl_form_tel .sl_select {flex:0 0 105px;margin-right:1.6rem;}
+.sl_form_item .sl_form_tel .sl_select + input {flex:1;}
+
+.sl_select {position:relative;}
+.sl_select:after {content:"\f102";display:block;font-size:1.2rem;font-family:'iconfont';font-weight:600;padding-left:.7rem;position:absolute;top:16px;right:0;}
+.sl_select > input[type="text"]{border:0 none;border-bottom:1px solid #E5E5E5;padding:0;background-color:transparent;box-sizing:border-box;width:100%;height:45px;font-size:16px;font-family:'genesis-text',sans-serif;outline:0;}
+.sl_select > input:read-only,
+.sl_select > input:read-only:hover {border-color:#000!important;}
+.sl_select .sl_select_list {display:none;position:absolute;top:45px;left:0;right:0;background-color:#fff;z-index:1;box-shadow:0 3px 15px rgba(0,0,0,10%)}
+.sl_select:hover .sl_select_list {display:block;max-height:264px;overflow:auto;}
+.sl_select .sl_select_list .sl_select_item {border-top:1px solid #E5E5E5;font-size:15px;line-height:35px;padding:0 1rem;color:#999;cursor:pointer;}
+.sl_select .sl_select_list .sl_select_item:hover {color:#000;}
 
 
 .sl_form_item .ctn_location_list {position:absolute;top:53px;left:2rem;right:2rem;background-color:#fff;border:2px solid rgba(0,0,0,0.2);z-index:1;max-height:200px;overflow:auto;}
@@ -736,7 +763,7 @@ a:hover{color:#111}
 .sl_form_item.w50 {width:calc(50% - 1.5rem);}
 .sl_form_item label {display:block;font-size:14px;font-family:'genesis-text',sans-serif;padding:0;}
 .sl_form_item input,
-.sl_form_item select {border:0 none;border-bottom:1px solid #E5E5E5;padding:0;background-color:transparent;box-sizing:border-box;width:100%;height:45px;font-size:14px;font-family:'genesis-text',sans-serif;outline:0;}
+.sl_form_item select {border:0 none;border-bottom:1px solid #E5E5E5;padding:0;background-color:transparent;box-sizing:border-box;width:100%;height:45px;font-size:16px;font-family:'genesis-text',sans-serif;outline:0;}
 .sl_form_item input:focus,
 .sl_form_item select:focus {border-color:#000000;transition:border-color .5s;}
 .sl_form_item input.readonly {color:#898787;border-color:#E5E5E5;}
