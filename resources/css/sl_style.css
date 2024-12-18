@@ -404,6 +404,8 @@ a:hover{color:#111}
 .sl_stock_item_info_item.more_info strong {display:inline-flex;justify-content:flex-start;width:100%;text-align:left;align-items:center;padding-bottom:2rem;border-bottom:1px solid #e5e5e5;}
 .sl_stock_item_info_item.more_info:last-child strong {border-bottom:0;}
 .sl_stock_item_info_item.more_info strong img {width:10rem;height:10rem;margin-right:1rem;}
+.sl_stock_item_info_item.info_text {flex-direction:column;border-top:1px solid #e5e5e5;margin-top:1rem;padding-top:2rem;}
+.sl_stock_item_info_item.info_text p {font-size:1.4rem;line-height:1.2;}
 
 .sl_stock_item_foot {padding-top:1rem;}
 .sl_stock_item_foot .sl_btn {border:1px solid #000;background-color:#000;font-size:1.6rem;font-family:'genesis-text',sans-serif;text-transform:upercase;width:100%;padding:1.5rem 2rem;color:#fff;text-align:center;transition:all .3s;cursor:pointer;}
