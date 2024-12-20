@@ -420,6 +420,13 @@ a:hover{color:#111}
 .sl_stock_item_info_item .co2.e:before {border-right-color:#f0b200;}
 .sl_stock_item_info_item .co2.f {background-color:#eb651a;color:#fff;}
 .sl_stock_item_info_item .co2.f:before {border-right-color:#eb651a;}
+.sl_stock_item_info_item .co2_img {width:186px;height:200px;border:1px solid #ccc;background-size:cover;}
+.sl_stock_item_info_item .co2_img.a {background-image:url(../img/more_info/label-a.png);}
+.sl_stock_item_info_item .co2_img.b {background-image:url(../img/more_info/label-b.png);}
+.sl_stock_item_info_item .co2_img.c {background-image:url(../img/more_info/label-c.png);}
+.sl_stock_item_info_item .co2_img.d {background-image:url(../img/more_info/label-d.png);}
+.sl_stock_item_info_item .co2_img.e {background-image:url(../img/more_info/label-e.png);}
+.sl_stock_item_info_item .co2_img.f {background-image:url(../img/more_info/label-f.png);}
 
 .sl_stock_item_foot {padding-top:1rem;}
 .sl_stock_item_foot .sl_btn {border:1px solid #000;background-color:#000;font-size:1.6rem;font-family:'genesis-text',sans-serif;text-transform:upercase;width:100%;padding:1.5rem 2rem;color:#fff;text-align:center;transition:all .3s;cursor:pointer;}
