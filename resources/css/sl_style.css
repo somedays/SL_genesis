@@ -428,6 +428,15 @@ a:hover{color:#111}
 .sl_stock_item_info_item .co2_img.e {background-image:url(../img/more_info/label-e.png);}
 .sl_stock_item_info_item .co2_img.f {background-image:url(../img/more_info/label-f.png);}
 
+.sl_stock_item_delivery {padding:2rem 0 1rem 0;}
+.sl_stock_item_delivery .item_delivery_info {text-align:center;padding:1rem;background-color:#000;color:#fff;border:1px solid #000;}
+.sl_stock_item_delivery .item_delivery_info.w2 {background-color:#996449;color:#fff;border-color:#996449;}
+.sl_stock_item_delivery .item_delivery_info .icon-tooltip {background-color:transparent;border:0 none;color:#fff;font-weight:bold;font-size:16px;cursor:pointer;}
+.sl_stock_item_delivery .item_delivery_info .icon-tooltip .sl_tooltip {top:20px;left:10px;padding:2.5rem;}
+.sl_stock_item_delivery .item_delivery_info .icon-tooltip:before {font-weight:600!important;}
+.sl_stock_item_delivery .item_delivery_info .icon-tooltip .sl_tooltip .icon-close {width:2rem;height:2rem;line-height:2rem;}
+.sl_stock_item_delivery .item_delivery_info .icon-tooltip .sl_tooltip .sl_tooltip_msg {color:#000;font-size:14px;font-weight:400;font-family:'geneiss-text',sans-serif;}
+
 .sl_stock_item_foot {padding-top:1rem;}
 .sl_stock_item_foot .sl_btn {border:1px solid #000;background-color:#000;font-size:1.6rem;font-family:'genesis-text',sans-serif;text-transform:upercase;width:100%;padding:1.5rem 2rem;color:#fff;text-align:center;transition:all .3s;cursor:pointer;}
 .sl_stock_item_foot .sl_btn:hover {background-color:#fff;color:#000;}
@@ -1288,6 +1297,7 @@ a:hover{color:#111}
     .sl_pop_pricing .pricing_left {width:40%;}
     .sl_pop_pricing .pricing_right {width:60%;}
     .sl_header .sl_logo a {width:16rem;}
+    .sl_stock_filter {display:none;}
 
 }
 
