@@ -74,14 +74,14 @@ a:hover{color:#111}
 .sl_text_button:hover span {color:#000;}
 .sl_text_button:after {content:"\f101";display:inline-block;font-size:1.2rem;font-family:'iconfont';font-weight:500;padding-left:.7rem;}
 .icon_arrow:after,
-.icon_arrow:before{content:"";display:block;position:absolute;background-color:#1b1b1b;height:2px;width:10px;transition:bottom .3s linear .3s,transform .3s linear;}
+.icon_arrow:before{content:"";display:block;position:absolute;background-color:#111;height:2px;width:14px;transition:bottom .3s linear .3s,transform .3s linear;}
 .icon_arrow:after,
 .icon_arrow:before{top:50%;margin-top:-2px}
-.icon_arrow.on:before{transform:rotate(-45deg)!important}
-.icon_arrow.on:after{transform:rotate(225deg)!important}
+.icon_arrow.on:before{transform:rotate(0)!important}
+.icon_arrow.on:after{transform:rotate(0)!important}
 .icon_arrow:after,
-.icon_arrow:before{transform:rotate(45deg);right:calc(1rem + 6px)}
-.icon_arrow:after{transform:rotate(135deg);right:32px;right:1rem}
+.icon_arrow:before{transform:rotate(0);right:calc(1rem)}
+.icon_arrow:after{transform:rotate(90deg);right:calc(1rem);}
 
 /* Header */
 .sl_header {background-color:#000;display:flex;justify-content:space-between;position:fixed;top:0;left:0;width:100%;height:7rem;box-sizing:border-box;z-index:90;transition:background-color .3s,top .3s;}
@@ -313,6 +313,28 @@ a:hover{color:#111}
 .sl_car_tech_item .sl_car_tech_info .sl_car_tech_icon {padding-right:1rem;}
 .sl_car_tech_item .sl_car_tech_info .sl_car_tech_text {font-family:HyundaiTextReg,sans-serif;font-size:1.6rem;line-height:2.7rem;}
 
+.sl_car_info_service {padding:3rem 0;float:left;width:100%;}
+.sl_car_info_service_item {padding:3rem 0 2rem 0;border-bottom:1px solid #E5E5E5;}
+.sl_car_info_service_tt {font-family:'genesis-head-light',sans-serif;font-size:3rem;}
+.sl_car_info_service_stt {font-family:'genesis-head',sans-serif;font-size:2rem;}
+.sl_car_info_service_desc {font-family:'genesis-text',sans-serif;font-size:1.6rem;color:#707070;padding:1rem 0;}
+.sl_car_info_service_desc p {padding:.6rem 0;}
+.sl_car_info_service_desc .link {text-decoration: underline;font-size:1.4rem;cursor:pointer;display:inline-block;padding:.6rem 0;}
+.sl_car_info_service_desc .link:hover {color:#000;}
+
+.sl_service_info {padding:1rem 0 3rem 0;}
+.sl_service_info_item {padding:2rem 0;}
+.sl_service_info_tt {font-size:2.6rem;font-family:'genesis-head',sans-serif;}
+.sl_service_info_list {padding:1rem 0;}
+.sl_service_info_list li {line-height:2.6rem;font-size:1.6rem;color:#666;padding-left:1rem;position:relative;}
+.sl_service_info_list li:before {content:"";display:block;position:absolute;top:-8px;left:0;margin-top:2rem;width:3px;height:3px;border-radius:2px;background-color:#666;}
+.sl_service_info_txt {color:#000;font-size:1.6rem;font-family:'genesis-text',sans-serif;}
+.sl_service_info_stxt {color:#666;font-size:1.5rem;}
+.sl_service_info_gp {padding:1rem 0;display:flex;}
+.sl_service_info_gp .sl_service_info_img {flex:0 0 50%;}
+.sl_service_info_gp .sl_service_info_item {flex:0 0 50%;padding:0 0 0 2rem;}
+.sl_service_info_gp .sl_service_info_txt {padding:1rem 0;}
+
 
 .sl_car_fitting_acc:after {content:"";display:block;clear:both;}
 .sl_car_fitting_acc_item {float:left;width:31%;margin:2rem 2.3% 2rem 0;background-color:#fff;}
@@ -386,7 +408,7 @@ a:hover{color:#111}
 .sl_stock_item_head .sl_stock_item_car_name {font-family:'genesis-head-light',sans-serif;color:#000;display:flex;flex-direction:column;}
 .sl_stock_item_head .sl_stock_item_car_name span {font-size:1.8rem;line-height:1;}
 .sl_stock_item_head .sl_stock_item_car_name strong {font-size:3rem;line-height:1.2;}
-.sl_stock_item_head .sl_stock_item_car_img {width:30.4rem;text-align:center;}
+.sl_stock_item_head .sl_stock_item_car_img {width:30.4rem;text-align:center;margin-top: 2rem;}
 .sl_stock_item_head .sl_stock_item_car_img img {max-width:100%;width: 100%;}
 .sl_stock_item_head .sl_stock_item_car_price {font-family:'genesis-head',sans-serif;display:flex;flex-direction:column;padding:1rem 0;}
 .sl_stock_item_head .sl_stock_item_car_price span {font-size:1.6rem;}
@@ -433,6 +455,7 @@ a:hover{color:#111}
 .sl_stock_item_info_item .co2_img.d {background-image:url(../img/more_info/label-d.png);}
 .sl_stock_item_info_item .co2_img.e {background-image:url(../img/more_info/label-e.png);}
 .sl_stock_item_info_item .co2_img.f {background-image:url(../img/more_info/label-f.png);}
+.sl_stock_item_info_item .co2_img.f {background-image:url(../img/more_info/label-g.png);}
 
 .sl_stock_item_delivery {padding:2rem 0 1rem 0;}
 .sl_stock_item_delivery .item_delivery_info {text-align:center;padding:1rem;background-color:#000;color:#fff;border:1px solid #000;}
@@ -534,6 +557,10 @@ a:hover{color:#111}
 .sl_estimate_price_info .loan_status.canceled {border-color:#999999;color:#999999;}
 .sl_estimate_price_info .loan_status_text {padding:0.5rem 0;font-size:1.5rem;font-family:'genesis-head',sans-serif;}
 .sl_estimate_price_info .loan_status_desc {padding:10px; font:inherit; font-size:1.4rem;}
+
+.vehicle_desc_list {padding:3rem 0;}
+.vehicle_desc_list > div {font-size:1.4rem;font-family:'genesis-text',sans-serif;padding-left:1rem;position:relative;color:#666666;line-height:2.2rem;}
+.vehicle_desc_list > div:before {content:"·";display:block;padding-right:0.5rem;font-size:1.8rem;position:absolute;top:0;left:0;}
 
 .icon-tooltip {position:relative;}
 .icon-tooltip .sl_tooltip {position:absolute;top:30px;right:0;border:1px solid #ddd;background-color:#fff;padding:2.5rem 3.5rem;cursor:default;box-shadow:0 0.4rem 0.8rem 0 rgb(0 0 0 / 50%);z-index:15;display:none;}
@@ -1204,6 +1231,9 @@ a:hover{color:#111}
 .sl_dialog .sl_dialog_close {text-align:right;}
 .sl_dialog .sl_dialog_head.with_tt {display:flex;justify-content:space-between;border-bottom:1px solid #000;align-items:center;padding-bottom:1rem;font-family:'genesis-head-light',sans-serif;}
 .sl_dialog .sl_dialog_head .sl_dialog_head_tt {font-size:3rem;}
+.sl_dialog_header {margin-top:-25px;}
+.sl_dialog_header span {font-family: "genesis-head-light"; font-size: 3rem;color: #000; position: relative;}
+.sl_dialog_header strong {display:block;font-family: "genesis-head"; font-size: 2rem;color: #000;}
 
 .sl_tab {display:flex;align-items:center;}
 .sl_tab .sl_tab_item {flex:1;display:inline-flex;align-items:center;cursor:pointer;justify-content:center;padding:1.4rem 0;margin-bottom:-2px;font-size:1.6rem;color:#999999;font-family:'genesis-head',sans-serif;cursor:pointer;border-bottom:1px solid #E5E5E5;}
