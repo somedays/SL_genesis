@@ -16,7 +16,7 @@
   position: absolute;
   width: 100%;
   height: 10px;
-  background-color: #333333;
+  background-color: #a4a4a4;
   border-radius: 6px;
 }
 .rc-slider-track {
@@ -30,8 +30,8 @@
   width: 20px;
   height: 20px;
   margin-top: -5px;
-  background-color: #996449;
-  border: solid 2px #996449;
+  background-color: #fff;
+  border: solid 1px #333;
   border-radius: 50%;
   cursor: pointer;
   cursor: -webkit-grab;
@@ -40,27 +40,27 @@
   touch-action: pan-x;
 }
 .rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
-  border-color: #905c42;
-  box-shadow: 0 0 0 5px #bb8163;
+  border-color: #00AAD2;
+  box-shadow: 0 0 0 5px #58c4dc;
 }
 .rc-slider-handle:focus {
   outline: none;
   box-shadow: none;
 }
 .rc-slider-handle:focus-visible {
-  border-color: #905c42;
-  box-shadow: 0 0 0 3px #bb8163;
+  border-color: #00AAD2;
+  box-shadow: 0 0 0 3px #58c4dc;
 }
 .rc-slider-handle-click-focused:focus {
-  border-color: #905c42;
+  border-color: #00AAD2;
   box-shadow: unset;
 }
 .rc-slider-handle:hover {
   border-color: #000000;
 }
 .rc-slider-handle:active {
-  border-color: #905c42;
-  box-shadow: 0 0 5px #bb8163;
+  border-color: #00AAD2;
+  box-shadow: 0 0 5px #58c4dc;
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
@@ -75,18 +75,18 @@
 .rc-slider-mark-text {
   position: absolute;
   display: inline-block;
-  color: #333;
+  color: #999;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
 }
 .rc-slider-mark-text-active {
-  color: #999;
+  color: #333;
 }
 .rc-slider-step {
   position: absolute;
   width: 100%;
-  height: 6px;
+  height: 4px;
   background: transparent;
   pointer-events: none;
 }
@@ -96,17 +96,14 @@
   width: 10px;
   height: 10px;
   vertical-align: middle;
-  background-color: #333;
-  border: 0px solid #6c6c6c;
+  background-color: #fff;
+  border: 2px solid #6c6c6c;
   border-radius: 50%;
   cursor: pointer;
-}
-.rc-slider.mileage .rc-slider-dot {display: none;}
-.rc-slider.mileage .rc-slider-dot:first-child, .rc-slider.mileage .rc-slider-dot:last-child {
-  display: block;
+  display: none;
 }
 .rc-slider-dot-active {
-  border-color: #333;
+  border-color: #000;
 }
 .rc-slider-dot-reverse {
   margin-right: -4px;
