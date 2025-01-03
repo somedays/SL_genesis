@@ -1318,9 +1318,10 @@ a:hover{color:#111}
 .sl_finance_disclaimer p, .finance_terms_txt p {padding-bottom: 5px;}
 
 /* Slider */
+.rc-slider-rail {background-color:#e5e5e5;}
 .rc-slider-rail, .rc-slider-track {height:12px;}
-.rc-slider-handle {width: 22px;height: 22px;background: url('../img/slider_arrow.png') no-repeat; background-size: 17px; background-position-y: 3px; background-position-x: 2px; background-color: #fff;}
-.rc-slider-dot {bottom:-10px; width:15px; height:15px; margin-top:-5px;}
+.rc-slider-handle {width: 24px;height: 24px;background: url('../img/icon_slide_arrow.svg') 50% 50% no-repeat;background-color: #fff;box-shadow:rgba(0,0,0,0.16);}
+.rc-slider-dot {bottom:-10px; width:15px; height:15px; margin-top:-4px;}
 .rc-slider-track {background-color:#1b1b1b;}
 .rc-slider-mark-text {padding-top:2px; font-size:16px; font-family:'genesis-text';}
 /* End of Slider */
