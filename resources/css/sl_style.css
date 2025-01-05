@@ -117,7 +117,7 @@ a:hover{color:#111}
 .sl_ctn_wrap {position:relative;width:100%;max-width:1640px;margin:0 auto;padding:5rem 0;}
 .sl_ctn_wrap.inquery {max-width:1080px;}
 .sl_ctn_wrap.full {max-width:100%;}
-.sl_ctn_wrap h3 {font-size:5rem;font-family:'genesis-head', sans-serif;color:#121212;}
+.sl_ctn_wrap h3 {font-size:4.8rem;font-family:'genesis-head', sans-serif;color:#121212;}
 .sl_ctn_wrap h4 {font-size:2rem;font-family:'genesis-head', sans-serif;color:#121212;}
 .sl_ctn_wrap.with_left_info {padding:5rem;}
 .sl_ctn_wrap.with_right_estimate {max-width:1280px;padding:0 6rem 5rem 6rem;}
