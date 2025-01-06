@@ -117,7 +117,7 @@ a:hover{color:#111}
 .sl_ctn_wrap {position:relative;width:100%;max-width:1640px;margin:0 auto;padding:5rem 0;}
 .sl_ctn_wrap.inquery {max-width:1080px;}
 .sl_ctn_wrap.full {max-width:100%;}
-.sl_ctn_wrap h3 {font-size:5rem;font-family:'genesis-head', sans-serif;color:#121212;}
+.sl_ctn_wrap h3 {font-size:4.8rem;font-family:'genesis-head', sans-serif;color:#121212;}
 .sl_ctn_wrap h4 {font-size:2rem;font-family:'genesis-head', sans-serif;color:#121212;}
 .sl_ctn_wrap.with_left_info {padding:5rem;}
 .sl_ctn_wrap.with_right_estimate {max-width:1280px;padding:0 6rem 5rem 6rem;}
@@ -862,7 +862,7 @@ a:hover{color:#111}
 .sl_form_wrap > h3 span {display:block;font-size:1.6rem;font-family:'genesis-text',sans-serif;}
 .sl_form {margin:0 auto 0 auto;display:flex;flex-wrap:wrap;gap:3rem;}
 .sl_form h3 {width:100%;font-family:'genesis-head-light',sans-serif;font-size:3rem;line-height:3rem;}
-.sl_form h4 {font-family:'genesis-head',sans-serif;margin:2rem 0 1rem 0;font-size:1.8rem;line-height:30px;}
+.sl_form h4 {font-family:'genesis-head',sans-serif;margin:2rem 0 1rem 0;font-size:2rem;line-height:30px;}
 .sl_form_item {width:100%;box-sizing:border-box;position:relative;}
 .sl_form_item.sl_form_radio_gp {padding-top:5px;}
 .sl_form_item .sl_form_radio input[type="radio"] {display:none;}
@@ -934,23 +934,24 @@ a:hover{color:#111}
 /*2023.09.11*/
 
 .sl_inquiry_head {margin:0 auto;max-width:1080px;position:relative;}
-.sl_inquiry_head h3 {font-size:4.8rem;padding-bottom:0;text-align:left;font-family:'genesis-head-light',sans-serif;}
+.sl_inquiry_head h3 {font-size:4.2rem;padding-bottom:0;text-align:left;font-family:'genesis-head-light',sans-serif;}
 
 .sl_inquiry_ctn {margin:0 auto;}
 .sl_inquiry_ctn .sl_inquiry_sctn {padding:5rem 0;}
 .sl_inquiry_ctn .sl_inquiry_sctn 
 .sl_inquiry_ctn .sl_inquiry_sctn h4 {text-align:left;font-size:4.2rem;}
-.sl_inquiry_ctn .sl_inquiry_sctn h5 {font-family:'genesis-head', sans-serif;color:#121212;padding-bottom:2rem;text-align:left;font-size:3.2rem;}
+.sl_inquiry_ctn .sl_inquiry_sctn h5 {font-family:'genesis-head', sans-serif;color:#121212;padding-bottom:2rem;text-align:left;font-size:2rem;}
 .sl_inquiry_ctn .sl_inquiry_sctn .sl_ctn_text {text-align:left;font-size:1.6rem;font-family:'genesis-text',sans-serif;color:#666;}
 .sl_inquiry_ctn label.sl_check_policy {display:flex;align-items:center;margin-top:1.5rem;}
 .sl_inquiry_ctn.check_policy label.sl_check_policy {display:flex;align-items:center;}
+.sl_inquiry_ctn .sl_policy_text {padding-left:20px;}
 .sl_inquiry_ctn .sl_policy_text.expend {flex:1;padding:0 0 0 1rem;font-size:1.4rem;font-family:'genesis-text',sans-serif;}
 .sl_inquiry_ctn .sl_policy_text.expend:only-child {padding:0;}
 .sl_inquiry_ctn .sl_policy_text a {color:#1b1b1b;text-decoration:underline;}
 .sl_inquiry_btn {text-align:center;padding:3rem 0;}
 .sl_inquiry_btn .sl_button {min-width:300px;}
 
-.sl_input_check {width:20px;height:20px;cursor:pointer;margin-left:1.5rem;background-color:#fff;}
+.sl_input_check {width:20px;height:20px;cursor:pointer;background-color:#fff;}
 .sl_input_check input {display:none;}
 .sl_input_check span {display:flex;position:relative;width:20px;height:20px;box-sizing:border-box;border:1px solid #000000;align-items:center;justify-content:center;}
 .sl_input_check span img {display:none;}
@@ -976,7 +977,7 @@ a:hover{color:#111}
 
 
 .sl_dealer {max-width:1200px;margin:0 auto;position:relative;}
-.sl_dealer h4 {font-size:3.2rem;padding-bottom:4rem;line-height:4rem;}
+.sl_dealer h4 {font-size:4.2rem;padding-bottom:4rem;line-height:4rem;font-family:'genesis-head-light',sans-serif;}
 
 /* Dealer Search */
 .sl_dealer_map {position:relative;width:100%;height:61.8rem;z-index:1;background-color:gray;}
@@ -986,7 +987,7 @@ a:hover{color:#111}
 .sl_dealer_info.on {display:block;}
 
 .sl_dealer_search_form {padding:2.5rem;}
-.sl_ctn_wrap .sl_dealer_search_title {line-height:45px;font-family:'genesis-head';color:#000;text-align:left;font-size:3rem;}
+.sl_ctn_wrap .sl_dealer_search_title {line-height:45px;font-family:'genesis-head';color:#000;text-align:left;font-size:2rem;}
 .sl_dealer_search_form {padding:2.5rem;}
 .sl_dealer_search_title {font-size:2rem;line-height:4rem;font-family:'genesis-head';margin-bottom:2rem;}
 .sl_dealer_search_form_item {display:flex;}
@@ -1235,7 +1236,7 @@ a:hover{color:#111}
 .consent_area .inline_checkbox_gp .sl_inquiry_sctn_checkbox_gp:first-child {padding-left:0;}
 .consent_area .sl_tooltip {position:fixed; top:30%; left:calc(50% - 240px); width:500px; z-index:20; max-height:calc(70% - 50px); overflow-y:auto; max-width:calc(100% - 40px); margin:0 20px;}
 .consent_area .sl_tooltip .sl_tooltip_msg {width:100%; max-height:fit-content; padding:5px;}
-.consent_area .sl_inquiry_sctn p {font-size:1.6rem; font-weight:normal; font-family:HyundaiTextReg,sans-serif;}
+.consent_area .sl_inquiry_sctn p {font-size:1.6rem; font-weight:normal; font-family:'genesis-text',sans-serif;}
 .consent_area:has(.sl_tooltip.active)::before{content:''; position:fixed; width:100%; height:100%; background-color:#505050; left:0; top:0; z-index:10; opacity:0.5;}
 .consent_area .sub_inline_box {margin:10px 0 0 0; padding:0 10px 10px 10px; background-color:#f4f4f4; border:solid 1px #ddd;}
 .consent_area .sub_inline_box > div {width:40%; display:inline-block; position:relative;}
@@ -1318,9 +1319,12 @@ a:hover{color:#111}
 .sl_finance_disclaimer p, .finance_terms_txt p {padding-bottom: 5px;}
 
 /* Slider */
+.rc-slider-rail {background-color:#e5e5e5;}
 .rc-slider-rail, .rc-slider-track {height:12px;}
-.rc-slider-handle {width: 22px;height: 22px;background: url('../img/slider_arrow.png') no-repeat; background-size: 17px; background-position-y: 3px; background-position-x: 2px; background-color: #fff;}
-.rc-slider-dot {bottom:-10px; width:15px; height:15px; margin-top:-5px;}
+.rc-slider-handle {width: 24px;height: 24px;background: url('../img/icon_slide_arrow.svg') 50% 50% no-repeat;background-color: #fff;box-shadow:0 1px 8px rgba(0,0,0,0.16);border:0 none;}
+.rc-slider-handle:focus {box-shadow:0 1px 8px rgba(0,0,0,0.16);}
+.rc-slider-handle:active {box-shadow:0 1px 8px rgba(0,0,0,0.32);}
+.rc-slider-dot {bottom:-10px; width:15px; height:15px; margin-top:-4px;}
 .rc-slider-track {background-color:#1b1b1b;}
 .rc-slider-mark-text {padding-top:2px; font-size:16px; font-family:'genesis-text';}
 /* End of Slider */
