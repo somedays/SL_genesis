@@ -175,7 +175,7 @@ a:hover{color:#111}
 /* Car Info */
 .sl_car_info:after {content:"";display:block;clear:both;}
 .sl_car_info .sl_byv_head {float:left;width:calc(100% - 41rem);}
-.sl_car_info_gp {float:left;padding:2rem 0;width:calc(100% - 41rem);}
+.sl_car_info_gp {float:left;padding:0 0 25px 0;width:calc(100% - 41rem);}
 .sl_car_info_gp:nth-of-type(1) {border-top:1px solid #000;}
 .sl_car_info_gp.sl_car_info_detail_item {padding:0;width:calc(100% - 41rem);}
 .sl_car_info_gp.sl_car_info_detail_item.border_top {border-top:1px solid #e5e5e5;}
@@ -184,9 +184,9 @@ a:hover{color:#111}
 .sl_car_info_gp.sl_car_info_detail_item.bg_gray .detail_item_ctn_table.no_line {padding-left:2rem;}
 .sl_car_info_gp.w100 {width:100%;}
 .sl_car_info_gp.w50 {width:50%;}
-.sl_car_info_tt {display:flex;justify-content:space-between;align-items:center;padding-bottom:0 !important;}
+.sl_car_info_tt {display:flex;justify-content:space-between;align-items:center;padding-bottom:0 !important;margin-bottom:2rem;}
 .sl_car_info_tt strong,
-.sl_car_info_gp h3 strong {font-size:1.8rem;line-height:4rem;font-family:'genesis-head';}
+.sl_car_info_gp h3 strong {font-size:1.8rem;line-height:4rem;font-family:'genesis-head-light';}
 .sl_car_info_tt .sl_text_button.ctrl_all {margin-top:0;margin-bottom:1.5rem;}
 .sl_car_info_tt .sl_text_button.ctrl_all:after {display:none;}
 .sl_car_info_tt .sl_text_button.ctrl_all span:first-child {padding-right:4rem;line-height:3rem;}
@@ -259,6 +259,7 @@ a:hover{color:#111}
 .sl_car_info_byv_item .price_item .btn_transh {border:0 none;background-color:transparent;cursor:pointer;padding:0;margin:0 0 0 1remr;}
 .sl_car_info_byv_item .price_item .btn_transh img {width:21px;height:21px;}
 .sl_car_info_acc.multiple .sl_car_info_byv_item {margin: 15px 0;}
+.sl_car_info_acc.multiple .sl_car_info_byv_item:last-child {padding-top:0; margin-bottom: 0;}
 .sl_car_info_acc.total .price_item {font-size: 2.2rem;text-align: right;font-weight: bold;}
 
 .sl_car_info_detail_item {position:relative;border-bottom:1px solid #e5e5e5;float:left;width:100%;}
@@ -1327,6 +1328,8 @@ a:hover{color:#111}
 .rc-slider-dot {bottom:-10px; width:15px; height:15px; margin-top:-4px;}
 .rc-slider-track {background-color:#1b1b1b;}
 .rc-slider-mark-text {padding-top:2px; font-size:16px; font-family:'genesis-text';}
+.rc-slider-mark-text:first-child {left: 45px !important; position: absolute; width: 100px; text-align: left;}
+.rc-slider-mark-text:last-child {position: absolute; width: 100px; text-align: right; right: -50px; left: auto !important;}
 /* End of Slider */
 
 .sl_dialog_foot {text-align:center;}
