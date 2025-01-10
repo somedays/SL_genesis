@@ -351,7 +351,7 @@ a:hover{color:#111}
 .sl_car_info_service_stt {font-family:'genesis-head',sans-serif;font-size:2rem;}
 .sl_car_info_service_desc {font-family:'genesis-text',sans-serif;font-size:1.6rem;color:#707070;padding:1rem 0;}
 .sl_car_info_service_desc p {padding:.6rem 0;}
-.sl_car_info_service_desc .link {text-decoration: underline;font-size:1.4rem;cursor:pointer;display:inline-block;padding:.6rem 0;}
+.sl_car_info_service_desc .link {text-decoration: underline;font-size:1.4rem;cursor:pointer;display:inline-block;padding:.6rem 0;text-underline-offset: 5px;}
 .sl_car_info_service_desc .link:hover {color:#000;}
 .sl_service_info {padding:1rem 0 3rem 0;}
 .sl_service_info_item {padding:2rem 0;}
