@@ -353,18 +353,23 @@ a:hover{color:#111}
 .sl_car_info_service_desc p {padding:.6rem 0;}
 .sl_car_info_service_desc .link {text-decoration: underline;font-size:1.4rem;cursor:pointer;display:inline-block;padding:.6rem 0;text-underline-offset: 5px;}
 .sl_car_info_service_desc .link:hover {color:#000;}
-.sl_service_info {padding:1rem 0 3rem 0;}
+
+.sl_service_info {padding:3rem 0 3rem 0;}
 .sl_service_info_item {padding:2rem 0;}
-.sl_service_info_tt {font-size:2.6rem;font-family:'genesis-head',sans-serif;}
-.sl_service_info_list {padding:1rem 0;}
-.sl_service_info_list li {line-height:2.6rem;font-size:1.6rem;color:#666;padding-left:1rem;position:relative;}
+.sl_service_info_item.top_line {margin-top:6rem;padding-top:6rem;border-top:1px solid #E5E5E5;}
+.sl_service_info_tt {font-size:2rem;line-height:2.8rem;font-family:'genesis-text',sans-serif;font-weight:600;}
+.sl_service_info_list {padding:2rem 0;}
+.sl_service_info_list li {line-height:2.8rem;font-size:1.8rem;color:#666;padding-left:1rem;position:relative;}
 .sl_service_info_list li:before {content:"";display:block;position:absolute;top:-8px;left:0;margin-top:2rem;width:3px;height:3px;border-radius:2px;background-color:#666;}
-.sl_service_info_txt {color:#000;font-size:1.6rem;font-family:'genesis-text',sans-serif;}
-.sl_service_info_stxt {color:#666;font-size:1.5rem;}
-.sl_service_info_gp {padding:1rem 0;display:flex;}
+.sl_service_info_txt {color:#666;font-size:1.8rem;line-height:2.8rem;font-family:'genesis-text',sans-serif;}
+.sl_service_info_stxt {color:#666;font-size:1.4rem;line-height:2.2rem;}
+.sl_service_info_gp {padding:2.5rem 0;display:flex;}
+.sl_service_info_gp.top_line {margin-top:2rem;padding-top:4rem;border-top:1px solid #E5E5E5;}
 .sl_service_info_gp .sl_service_info_img {flex:0 0 50%;}
 .sl_service_info_gp .sl_service_info_item {flex:0 0 50%;padding:0 0 0 2rem;}
-.sl_service_info_gp .sl_service_info_txt {padding:1rem 0;}
+.sl_service_info_gp .sl_service_info_txt {padding:1.5rem 0;}
+.sl_service_btn {margin-top:1rem;padding-top:6rem;border-top:1px solid #e5e5e5;text-align:center;}
+.sl_service_btn .sl_button {min-width:24rem;font-family:'genesis-text',sans-serif;font-size:1.8rem;line-height:3.2rem;}
 
 .sl_car_fitting_acc:after {content:"";display:block;clear:both;}
 .sl_car_fitting_acc_item {float:left;width:31%;margin:2rem 2.3% 2rem 0;background-color:#fff;}
@@ -1271,6 +1276,7 @@ a:hover{color:#111}
 .sl_dialog {position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.3);z-index:90;display:none;}
 .sl_dialog.on {display:block;}
 .sl_dialog .sl_dialog_wrap {position:fixed;top:50%;left:50%;max-width:1440px;max-height:90vh;transform:translate(-50%,-50%);background-color:#fff;padding:3rem 4rem;overflow:auto;min-width:800px;}
+.sl_dialog.w1200 .sl_dialog_wrap {max-width:90%;width:1200px;}
 .sl_dialog .sl_dialog_close {text-align:right;}
 .sl_dialog .sl_dialog_head.with_tt {display:flex;justify-content:space-between;border-bottom:1px solid #000;align-items:center;padding-bottom:1rem;font-family:'genesis-head-light',sans-serif;}
 .sl_dialog .sl_dialog_head .sl_dialog_head_tt {font-size:3rem;}
@@ -1404,6 +1410,8 @@ a:hover{color:#111}
     .sl_header .sl_logo a {width:16rem;}
     .sl_stock_filter {display:none;}
     .sl_stock_car_list .sl_stock_car_item {max-width: 50%;width: calc(50% - 1.5rem);box-sizing: border-box;}
+    .sl_dialog.w1200 .sl_dialog_wrap {max-width:100%;min-width:auto;}
+    .sl_dialog.w1200 .sl_dialog_wrap {transform:translate(0,0);top:6rem;left:0;right:0;bottom:0;max-height:none;}
 
 }
 
