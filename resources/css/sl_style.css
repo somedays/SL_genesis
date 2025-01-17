@@ -605,9 +605,11 @@ a:hover{color:#111}
 .sl_estimate_price_info .loan_status_desc {padding:10px; font:inherit; font-size:1.4rem;}
 
 .vehicle_desc_list {padding:3rem 0;}
-.vehicle_desc_list > div {font-size:1.4rem;font-family:'genesis-text',sans-serif;padding-left:1rem;position:relative;color:#666666;line-height:2.2rem; padding-bottom: 30px;}
+.vehicle_desc_list > div {font-size:1.4rem;font-family:'genesis-text',sans-serif;padding-left:1rem;position:relative;color:#666666;line-height:2.2rem; padding-bottom: 15px;}
 .vehicle_desc_list > div:last-child {padding-bottom: 0;}
 .vehicle_desc_list > div:before {content:"·";display:block;padding-right:0.5rem;font-size:1.8rem;position:absolute;top:0;left:0;}
+.vehicle_desc_list .label_img {max-width: 350px; padding:0;}
+.vehicle_desc_list .label_img:before {content:none;}
 
 .icon-tooltip {position:relative;}
 .icon-tooltip .sl_tooltip {position:absolute;top:30px;right:0;border:1px solid #ddd;background-color:#fff;padding:2.5rem 3.5rem;cursor:default;box-shadow:0 0.4rem 0.8rem 0 rgb(0 0 0 / 50%);z-index:15;display:none;}
