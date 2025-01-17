@@ -197,6 +197,7 @@ a:hover{color:#111}
 .sl_car_info_tt .sl_button.modify:hover {color:#1b1b1b;}
 .sl_car_info_tt .sl_button.modify img {display:inline-block;width:20px;height:20px;vertical-align:middle;}
 .sl_car_info_tt .sl_button.modify span {display:inline-block;vertical-align:middle;padding-left:1rem;}
+.sl_car_info_gp.sl_byv_ctn_tt {border:0;}
 
 .sl_car_info_gp h3 .sl_button {padding:0 3rem;line-height:3.6rem;height:4rem;margin-top:1rem;}
 .sl_dialog .sl_car_info_gp {width:100%;}
