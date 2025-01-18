@@ -534,9 +534,8 @@ a:hover{color:#111}
 .sl_car_estimate h3 strong {display:block;font-family:'genesis-head',sans-serif;font-size:3rem;}
 .sl_car_estimate h3 span {display:block;font-family:'genesis-text',sans-serif;font-size:1.4rem;color:#666;}
 .sl_car_estimate .sl_car_estimate_summary {font-family:'genesis-head-light';color: #000;font-size: 2rem;padding: 0 0 10px 0;}
-.sl_car_estimate_subbtns {margin:1rem 0 0 0;}
+.sl_car_estimate_subbtns {margin:1rem 0 0 0;display: flex;gap: 1rem;flex-wrap: wrap;}
 .sl_car_estimate .sub_button {border:0 none;background-color:transparent;padding:0;margin:0;font-family:'genesis-head',sans-serif;display:inline-flex;align-items:center;cursor:pointer;}
-.sl_car_estimate .sub_button + .sub_button {margin-left:1rem;}
 .sl_car_estimate .sub_button img {margin-right:0.5rem;}
 .sl_car_estimate .sub_button span {line-height:24px;}
 
