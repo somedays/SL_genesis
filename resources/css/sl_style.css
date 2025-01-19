@@ -623,7 +623,7 @@ a:hover{color:#111}
 .vehicle_desc_list > div {font-size:1.4rem;font-family:'genesis-text',sans-serif;padding-left:1rem;position:relative;color:#666666;line-height:2.2rem; padding-bottom: 15px;}
 .vehicle_desc_list > div:last-child {padding-bottom: 0;}
 .vehicle_desc_list > div:before {content:"·";display:block;padding-right:0.5rem;font-size:1.8rem;position:absolute;top:0;left:0;}
-.vehicle_desc_list .label_img {max-width: 200px; padding:0;}
+.vehicle_desc_list .label_img {max-width: 250px; padding:0;}
 .vehicle_desc_list .label_img:before {content:none;}
 
 .icon-tooltip {position:relative;}
